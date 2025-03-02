@@ -6,6 +6,15 @@ Uses self-hosted method to install.
 
 for more details, see -> https://github.com/Azure/karpenter-provider-azure
 
+> [!NOTE]
+> This code installs Karpenter with Karpenter Provider for Azure v0.7.3
+
+## Prerequisites
+- CLI needed to follow the steps
+  - [azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+  - [terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+  - [kubectl CLI](https://kubernetes.io/ja/docs/tasks/tools/#kubectl)
+  
 ## steps to provisinoning
 1, Initialize terraform for `azure` directory
 
@@ -18,7 +27,6 @@ terraform -chdir=azure init
 ```
 terraform -chdir=azure apply
 ```
-
 
 4, keep the output result
 
@@ -48,7 +56,6 @@ azure_aks_network_plugin_mode = "overlay"
 ...
 karpenter_k8s_namespace = "kube-system"
 kubernetes_karpenter_serviceaccount_name = "karpenter-sa"
-
 ```
 
 6, Initialize terraform for `kubernetes` directory
