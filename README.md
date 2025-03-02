@@ -15,7 +15,7 @@ for more details, see -> https://github.com/Azure/karpenter-provider-azure
   - [terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
   - [kubectl CLI](https://kubernetes.io/ja/docs/tasks/tools/#kubectl)
   
-## steps to provisinoning
+## steps to deploy
 1, Initialize terraform for `azure` directory
 
 ```
