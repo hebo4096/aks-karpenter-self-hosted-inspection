@@ -70,6 +70,6 @@ terraform -chdir=kubernetes apply
 ```
 
 8, customize the Custom Resources (NodePool, AKSNodeClass) according to step [here](
-https://gihub.com/Azure/karpenter-provider-azure/#using-karpenter-self-hosted)
+https://github.com/Azure/karpenter-provider-azure/#using-karpenter-self-hosted)
 
 9, try out node scaling by Karpenter according to step [here](https://github.com/Azure/karpenter-provider-azure/#scale-up-deployment)
